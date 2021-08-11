@@ -8,6 +8,9 @@ $(exec): $(objects)
 	gcc $(objects) $(flags) -o $(exec)
 
 %.o: %.c include/%.h
-	gcc -c $(flags) $< -o $@
-	sudo cp ./$(exec) /usr/local/bin/jewel
-	
+	sudo cp ./$(exec) /usr/local/bin/$(exec)
+
+clean:
+	-rm cruncher
+	-rm src/*.o
+	sudo rm /usr/local/bin/$(exec)
