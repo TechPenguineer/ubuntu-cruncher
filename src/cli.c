@@ -2,6 +2,6 @@
 
 int main(int argc, char* argv[])
 {
-    printf("CRUNCHING");
+    printf("%i",strlen(argv));
     return 0;
 }  

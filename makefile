@@ -5,7 +5,7 @@ flags = -g
 
 
 $(exec): $(objects)
-	gcc $(objects) $(flags) -o /usr/local/bin/$(exec)
+	sudo gcc $(objects) $(flags) -o /usr/local/bin/$(exec)
 
 %.o: %.c include/%.h
 	sudo cp ./$(exec) /usr/local/bin/$(exec)
