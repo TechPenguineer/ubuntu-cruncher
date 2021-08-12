@@ -14,11 +14,18 @@ int main(int argc, char* argv[])
         printf("Unsupplied arguments. \nPlease specify a string to crunch\nFormat: cruncher {STRING}\n");
     }
     else{
-
+        char ParsedData[]={};
         int i;
         for(i=0; i<count; i++)
         {
+              char *Data = strtok(argv[i], ",");
+            printf("%s\n", Data);
+            while (Data != NULL)
+            {
+                /
+            }
             
+          
         }
 
     }
