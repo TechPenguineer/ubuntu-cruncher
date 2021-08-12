@@ -2,6 +2,10 @@
 
 int main(int argc, char* argv[])
 {
-    printf("%i",strlen(argv));
+
+    int count = 1; 
+    while(argv[++count] != NULL);
+
+    printf("%i\n", count);
     return 0;
 }  
