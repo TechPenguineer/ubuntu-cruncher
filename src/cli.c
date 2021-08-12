@@ -11,7 +11,8 @@ int main(int argc, char* argv[])
 
     if(argc >= 0)
     {
-        printf("Unsupplied arguments. \nPlease specify a string to crunch\n");
+        printf("Unsupplied arguments. \nPlease specify a string to crunch\nFormat: cruncher {STRING}\n");
+        
     }
     else{
 
