@@ -25,3 +25,7 @@ cruncher Hey
 **> Hey**<br>
 **> eyH**<br>
 **> yHe**<br>
+
+## How it works
+
+The program is very simple. It just takes the word and gets the number of characters in the word. It then loops deppending on the amount of character. Each time it runs through it takes the `0` index and puts it in the last. So the word "Hey" would turn into "eyH" and will continue to do that untill index `0` is back at index `0`
