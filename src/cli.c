@@ -5,13 +5,21 @@
 int main(int argc, char* argv[])
 {
 
+    // GET ARGUMENT COUNT
     int count = 0; 
-
-    char ParsedData[] = "";
     while(argv[++count+1] != NULL);
 
-    parseData(argv[count]);
+    if(argc >= 0)
+    {
+        printf("Unsupplied arguments. \nPlease specify a string to crunch\n");
+    }
+    else{
 
-    printf("Crunching %i argumnets \n", count);
-    return 0;
+    int i;
+    for(i=0; i>count; i++)
+    {
+        printf("Argument #%i", i);
+    }
+
+    }
 }  
