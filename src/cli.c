@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
         printf("Unsupplied/Too many arguments. \nPlease specify a string to crunch\nFormat: cruncher {STRING}\n");
     }
     else if(argc == 2){
-        char buf[] = argv[2];
+        char buf[] = {argv[2]};
         int i = 0;
         char *p = strtok(buf,"");
         char *array[strlen(buf)];
@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
             p = strtok(NULL, "");
         }
 
-        for(i=0; i<strlen(buf); i++)
+        for(i=0; i<array; i++)
                 printf("%s\n", array[i]);
 
         
