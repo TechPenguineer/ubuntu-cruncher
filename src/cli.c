@@ -3,9 +3,11 @@
 int main(int argc, char* argv[])
 {
 
-    int count = 1; 
-    while(argv[++count] != NULL);
+    int count = 0; 
+    while(argv[++count+1] != NULL);
 
-    printf("%i\n", count);
+    
+
+    printf("Crunching %i argumnets \n", count);
     return 0;
 }  

@@ -4,5 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 
+parseData(char* )
+
 
 #endif 
